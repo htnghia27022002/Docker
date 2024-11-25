@@ -19,7 +19,7 @@ services:
             - mysqldb
     php:
         container_name: php
-        image: php:8.3-apache
+        image: php:8.3-fpm
         restart: always
         volumes:
             - "./etc/php/php.ini:/usr/local/etc/php/conf.d/php.ini"
